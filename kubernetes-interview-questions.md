@@ -343,5 +343,52 @@ spec:
         averageValue: 100
 ```
 
+## Additional Theoretical Kubernetes Questions
+
+**26. What is the role of etcd in Kubernetes?**
+Etcd is a distributed key-value store used by Kubernetes to store all cluster data, including configuration, state, and metadata. It provides consistency and high availability for the cluster.
+
+**27. What is a Kubernetes Pod?**
+A Pod is the smallest deployable unit in Kubernetes, representing a single instance of a running process. Pods can contain one or more containers that share storage, network, and a specification for how to run the containers.
+
+**28. What is a ReplicaSet?**
+A ReplicaSet ensures that a specified number of pod replicas are running at any given time. It automatically replaces failed pods and scales the number of pods as needed.
+
+**29. What is a DaemonSet?**
+A DaemonSet ensures that a copy of a pod runs on all (or some) nodes in the cluster. It is commonly used for background tasks like log collection or monitoring.
+
+**30. What is a StatefulSet?**
+A StatefulSet is used to manage stateful applications. It provides stable, unique network identifiers and persistent storage for each pod, supporting ordered deployment and scaling.
+
+**31. What is a Service in Kubernetes?**
+A Service is an abstraction that defines a logical set of pods and a policy by which to access them. Services enable communication between different components and provide load balancing.
+
+**32. What is a Namespace in Kubernetes?**
+A Namespace is a way to divide cluster resources between multiple users or teams. It provides scope for names and helps organize resources in large clusters.
+
+**33. What is RBAC in Kubernetes?**
+Role-Based Access Control (RBAC) is a method for regulating access to Kubernetes resources based on the roles of individual users or groups. It uses roles and role bindings to define permissions.
+
+**34. What is a Kubernetes Ingress?**
+Ingress is an API object that manages external access to services in a cluster, typically HTTP. It provides routing, SSL termination, and virtual hosting.
+
+**35. What is a Node in Kubernetes?**
+A Node is a physical or virtual machine on which Kubernetes runs pods. Each node contains the necessary services to run pods and is managed by the master components.
+
+**36. What is a Controller in Kubernetes?**
+A Controller is a control loop that watches the state of the cluster and makes changes to achieve the desired state. Examples include Deployment Controller, ReplicaSet Controller, and Job Controller.
+
+**37. What is a Job in Kubernetes?**
+A Job creates one or more pods and ensures that a specified number of them successfully terminate. It is used for batch processing and one-off tasks.
+
+**38. What is a PersistentVolume (PV) and PersistentVolumeClaim (PVC)?**
+A PersistentVolume is a piece of storage in the cluster, while a PersistentVolumeClaim is a request for storage by a user. PVCs allow pods to use persistent storage independent of the pod lifecycle.
+
+**39. What is a Taint and Toleration in Kubernetes?**
+Taints are applied to nodes to repel certain pods, while tolerations are applied to pods to allow them to be scheduled on tainted nodes. This helps control pod placement.
+
+**40. What is the difference between Deployment and StatefulSet?**
+Deployment is used for stateless applications, providing scaling and rolling updates. StatefulSet is used for stateful applications, providing stable identities and persistent storage.
+
 ---
 This file covers Kubernetes interview questions and answers for senior roles, with code examples from basic to advanced.
